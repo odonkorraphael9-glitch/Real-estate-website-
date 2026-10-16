@@ -18,10 +18,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   min-width: 320px;
+  overflow-x: clip;
   margin: 0;
   background: var(--ivory);
   color: var(--slate);
@@ -31,6 +33,38 @@ body {
 
 #root {
   min-height: 100svh;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+@media (max-width: 639px) {
+  body {
+    letter-spacing: 0;
+  }
+
+  .btn {
+    min-height: 48px;
+    justify-content: center;
+    padding: 0.8rem 1.2rem;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
 }
 
 body::before {

@@ -178,7 +178,7 @@ export function Listings({ featured = false }) {
   );
 }
 
-const cardCls = "bg-[var(--ivory)] border border-black/10 rounded-[2rem] p-8 shadow-[0_20px_40px_-20px_rgba(13,13,18,.3)] h-[26rem] flex flex-col";
+const cardCls = "bg-[var(--ivory)] border border-black/10 rounded-[1.5rem] sm:rounded-[2rem] p-5 sm:p-8 shadow-[0_20px_40px_-20px_rgba(13,13,18,.3)] min-h-[20rem] sm:h-[26rem] flex flex-col";
 
 function Shuffler() {
   const [items, setItems] = useState(["Company source linked", "Project details noted", "Location information checked"]);
