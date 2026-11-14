@@ -4,11 +4,11 @@ HomeGrid is a source-linked guide to real-estate developers and projects in Ghan
 
 ## Pages
 
-- `/` — Home page and featured sections
+- `/` — Home page, featured sections and advertising packages
 - `/developers` — Searchable developer directory
 - `/buying-guide` — Practical property-buying steps
 - `/due-diligence` — Independent verification checklist
-- `/advertise` — Showcase packages and enquiry form
+- `/advertise` — Showcase packages and enquiry form (also featured on the home page)
 
 Page components live in `src/pages/`. React Router handles navigation between routes.
 

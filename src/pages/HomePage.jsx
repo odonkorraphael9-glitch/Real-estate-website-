@@ -483,7 +483,7 @@ export function Footer() {
 export default function HomePage() {
   return (
     <>
-      <Hero /><Listings featured /><Features /><Philosophy /><Protocol /><DueDiligence />
+      <Hero /><Listings featured /><Features /><Philosophy /><Protocol /><DueDiligence /><Advertise />
     </>
   );
 }
