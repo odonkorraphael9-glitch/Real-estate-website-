@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  min-width: 320px;
+  min-width: 0;
   overflow-x: clip;
   margin: 0;
   background: var(--ivory);
@@ -52,6 +52,19 @@ button {
 @media (max-width: 639px) {
   body {
     letter-spacing: 0;
+  }
+
+  .hero-title {
+    font-size: clamp(1.9rem, 9vw, 2.25rem);
+  }
+
+  .hero-script {
+    font-size: clamp(3rem, 18vw, 4.5rem);
+  }
+
+  .mobile-nav-shell {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .btn {
@@ -162,6 +175,44 @@ body::before {
 @keyframes scan {
   from { transform: translateY(0); }
   to { transform: translateY(240px); }
+}
+
+@media (max-width: 240px) {
+  .hero-title {
+    font-size: 1.35rem;
+  }
+
+  .hero-script {
+    font-size: 2.75rem;
+  }
+
+  .mobile-nav-shell {
+    width: 96%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .mobile-nav-shell > a:first-child {
+    font-size: 0.875rem;
+  }
+
+  .mobile-nav-shell > button {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .hero-content {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .hero-content .btn {
+    width: 100%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 0.8rem;
+    text-align: center;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -74,7 +74,7 @@ export function Navbar() {
   }, [pathname]);
   const links = [["Buying guide", "/buying-guide"], ["Due diligence", "/due-diligence"], ["Advertise", "/advertise"]];
   return (
-    <nav className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-4xl rounded-full px-5 py-3 flex items-center justify-between transition-all duration-500 border ${scrolled ? "backdrop-blur-xl border-black/10" : "border-transparent"}`}
+    <nav className={`mobile-nav-shell fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-4xl rounded-full px-5 py-3 flex items-center justify-between transition-all duration-500 border ${scrolled ? "backdrop-blur-xl border-black/10" : "border-transparent"}`}
       style={{ background: scrolled ? "rgba(250,248,245,.6)" : "transparent", color: scrolled ? "var(--obsidian)" : "var(--ivory)" }}>
       <Link to="/" className="font-bold text-lg tracking-tight">HomeGrid</Link>
       <div className="hidden md:flex gap-7 text-sm">
@@ -104,10 +104,10 @@ function Hero() {
     <section id="top" ref={ref} className="relative h-[100dvh] w-full overflow-hidden">
       <img src={U(IMG.hero, 2000)} alt="" className="absolute inset-0 w-full h-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-[var(--obsidian)] via-[var(--obsidian)]/60 to-black/30" />
-      <div className="relative h-full flex flex-col justify-end px-5 sm:px-6 md:px-16 pb-12 sm:pb-16 md:pb-24 max-w-5xl text-[var(--ivory)]">
+      <div className="hero-content relative h-full flex flex-col justify-end px-5 sm:px-6 md:px-16 pb-12 sm:pb-16 md:pb-24 max-w-5xl text-[var(--ivory)]">
         <p className="h-in font-data text-xs md:text-sm mb-4" style={{ color: "var(--gold)" }}>A guide to Ghana's property developers</p>
-        <h1 className="h-in font-bold text-3xl min-[360px]:text-4xl md:text-6xl leading-tight">Find your place in</h1>
-        <h1 className="h-in font-drama text-6xl sm:text-7xl md:text-[10rem] leading-[0.95] -mt-1" style={{ color: "var(--gold)" }}>Ghana.</h1>
+        <h1 className="hero-title h-in font-bold text-3xl min-[360px]:text-4xl md:text-6xl leading-tight">Find your place in</h1>
+        <h1 className="hero-script h-in font-drama text-6xl sm:text-7xl md:text-[10rem] leading-[0.95] -mt-1" style={{ color: "var(--gold)" }}>Ghana.</h1>
         <p className="h-in mt-5 sm:mt-6 max-w-md text-sm sm:text-base md:text-lg opacity-80">Explore established real-estate developers, discover their projects and follow the links to official company information.</p>
         <div className="h-in mt-6 sm:mt-8"><Btn href="#listings">Explore Developers</Btn></div>
       </div>
@@ -400,7 +400,7 @@ export function Advertise() {
       <div className="max-w-3xl">
         <p className="font-data text-xs uppercase tracking-widest" style={{ color: "#8a6f1f" }}>For property & hospitality businesses</p>
         <h2 className="mt-3 font-bold text-3xl md:text-5xl text-[var(--obsidian)]">Put your space in the <span className="font-drama" style={{ color: "var(--gold)" }}>spotlight</span></h2>
-        <p className="mt-4 text-sm leading-relaxed opacity-75">Reach people exploring property in Ghana. Choose a suggested monthly showcase range and send an enquiry for apartments, houses, hotels, serviced apartments, land and more.</p>
+        <p className="mt-4 text-sm leading-relaxed opacity-75">Reach people exploring property in Ghana. Choose a suggested monthly showcase range and send an enquiry for apartments, houses, hotels, serviced apartments, land and many more.</p>
       </div>
       <p className="mt-8 rounded-2xl border border-[var(--gold)]/30 bg-white px-5 py-4 text-sm leading-relaxed">
         <strong>Suggested introductory rates (GH₵ per month).</strong> These are proposal ranges, not confirmed published tariffs. Final pricing, placement, availability and deliverables are agreed after enquiry.
