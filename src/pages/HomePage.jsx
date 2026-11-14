@@ -72,7 +72,7 @@ export function Navbar() {
     h(); window.addEventListener("scroll", h);
     return () => window.removeEventListener("scroll", h);
   }, [pathname]);
-  const links = [["Buying guide", "/buying-guide"], ["Due diligence", "/due-diligence"], ["Advertise", "/advertise"]];
+  const links = [["Buying guide", "/buying-guide"], ["Due diligence", "/due-diligence"]];
   return (
     <nav className={`mobile-nav-shell fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-4xl rounded-full px-5 py-3 flex items-center justify-between transition-all duration-500 border ${scrolled ? "backdrop-blur-xl border-black/10" : "border-transparent"}`}
       style={{ background: scrolled ? "rgba(250,248,245,.6)" : "transparent", color: scrolled ? "var(--obsidian)" : "var(--ivory)" }}>
