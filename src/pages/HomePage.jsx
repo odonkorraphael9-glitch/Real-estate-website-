@@ -405,7 +405,7 @@ export function Advertise() {
       <p className="mt-8 rounded-2xl border border-[var(--gold)]/30 bg-white px-5 py-4 text-sm leading-relaxed">
         <strong>Suggested introductory rates (GH₵ per month).</strong> These are proposal ranges, not confirmed published tariffs. Final pricing, placement, availability and deliverables are agreed after enquiry.
       </p>
-      <div className="mt-6 sm:mt-8 grid gap-4 sm:gap-5 md:grid-cols-3">
+      <div className="mt-6 sm:mt-8 grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {packages.map((item) => (
           <article key={item.name} className={`flex flex-col rounded-[2rem] border p-7 ${item.featured ? "border-[var(--gold)] ring-2 ring-[var(--gold)]/50 shadow-xl" : "border-black/10 bg-white"}`}
             style={item.featured ? { background: "var(--obsidian)", color: "var(--ivory)" } : {}}>
