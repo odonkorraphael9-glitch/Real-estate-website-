@@ -343,7 +343,10 @@ function DueDiligence() {
           <li className="flex gap-3"><Check size={18} className="mt-0.5 shrink-0" style={{ color: "var(--gold)" }} />Have an independent Ghanaian property lawyer verify land title, permits, contracts and payment terms before paying.</li>
           <li className="flex gap-3"><Check size={18} className="mt-0.5 shrink-0" style={{ color: "var(--gold)" }} />A company website or social profile is a source for its claims, not proof of legal registration, title or investment safety.</li>
         </ul>
-        <div className="mt-8"><Btn href="#listings">Search the directory</Btn></div>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <Btn href="#listings">Search the directory</Btn>
+          <Btn href="#advertise" bg="var(--obsidian)" fg="var(--ivory)" slide="var(--gold)">Advertise with us</Btn>
+        </div>
       </div>
     </section>
   );
@@ -470,7 +473,7 @@ export function Footer() {
     <footer className="rounded-t-[3rem] sm:rounded-t-[4rem] px-5 sm:px-6 md:px-16 pt-12 sm:pt-16 pb-8 sm:pb-10" style={{ background: "var(--obsidian)", color: "var(--ivory)" }}>
       <div className="grid md:grid-cols-4 gap-10 max-w-6xl mx-auto">
         <div className="md:col-span-2"><p className="font-bold text-2xl">HomeGrid</p><p className="opacity-60 mt-2 max-w-xs text-sm">A source-linked guide to real-estate developers and projects in Ghana. Not a property listing or legal advice service.</p></div>
-        <div className="text-sm space-y-2"><p className="font-semibold">Explore</p>{[["Developers", "/developers"], ["Buying guide", "/buying-guide"], ["Due diligence", "/due-diligence"], ["Advertise with us", "/advertise"]].map(([label, href]) => <Link key={label} to={href} className="block opacity-60 hover:opacity-100">{label}</Link>)}</div>
+        <div className="text-sm space-y-2"><p className="font-semibold">Explore</p>{[["Developers", "/developers"], ["Buying guide", "/buying-guide"], ["Due diligence", "/due-diligence"], ["Advertise with us", "/#advertise"]].map(([label, href]) => <Link key={label} to={href} className="block opacity-60 hover:opacity-100">{label}</Link>)}</div>
         <div className="text-sm space-y-2"><p className="font-semibold">Legal</p>{["Terms", "Privacy"].map((x) => <a key={x} href="#" className="block opacity-60 hover:opacity-100">{x}</a>)}</div>
       </div>
       <div className="max-w-6xl mx-auto mt-12 flex items-center gap-2 font-data text-xs opacity-80">
